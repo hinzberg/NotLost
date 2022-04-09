@@ -13,10 +13,13 @@
 		8D80CB3E2800C0A5005E7750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D80CB3C2800C0A5005E7750 /* Main.storyboard */; };
 		8D80CB402800C0A6005E7750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D80CB3F2800C0A6005E7750 /* Assets.xcassets */; };
 		8D80CB432800C0A6005E7750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D80CB412800C0A6005E7750 /* LaunchScreen.storyboard */; };
+		8DAA239C2800D972008520FE /* TrailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA239B2800D972008520FE /* TrailTableViewController.swift */; };
+		B0A763A79D98669FC1EF415C /* Pods_Walk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B271B16FFE956C465C7A2187 /* Pods_Walk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D80CB332800C0A5005E7750 /* Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C492955D0B540E28FA8B8F /* Pods-Walk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walk.debug.xcconfig"; path = "Target Support Files/Pods-Walk/Pods-Walk.debug.xcconfig"; sourceTree = "<group>"; };
+		8D80CB332800C0A5005E7750 /* NotLost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotLost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D80CB362800C0A5005E7750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D80CB382800C0A5005E7750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8D80CB3A2800C0A5005E7750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		8D80CB3F2800C0A6005E7750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D80CB422800C0A6005E7750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D80CB442800C0A6005E7750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DAA239B2800D972008520FE /* TrailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTableViewController.swift; sourceTree = "<group>"; };
+		B271B16FFE956C465C7A2187 /* Pods_Walk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED54C72831A055952B405F18 /* Pods-Walk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walk.release.xcconfig"; path = "Target Support Files/Pods-Walk/Pods-Walk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +37,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A763A79D98669FC1EF415C /* Pods_Walk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E58EF880A5243D743D4AD21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00C492955D0B540E28FA8B8F /* Pods-Walk.debug.xcconfig */,
+				ED54C72831A055952B405F18 /* Pods-Walk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D80CB2A2800C0A4005E7750 = {
 			isa = PBXGroup;
 			children = (
 				8D80CB352800C0A5005E7750 /* Walk */,
 				8D80CB342800C0A5005E7750 /* Products */,
+				4E58EF880A5243D743D4AD21 /* Pods */,
+				D46B0588FAF551C2503A2237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8D80CB342800C0A5005E7750 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D80CB332800C0A5005E7750 /* Walk.app */,
+				8D80CB332800C0A5005E7750 /* NotLost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,28 +81,39 @@
 				8D80CB3F2800C0A6005E7750 /* Assets.xcassets */,
 				8D80CB412800C0A6005E7750 /* LaunchScreen.storyboard */,
 				8D80CB442800C0A6005E7750 /* Info.plist */,
+				8DAA239B2800D972008520FE /* TrailTableViewController.swift */,
 			);
 			path = Walk;
+			sourceTree = "<group>";
+		};
+		D46B0588FAF551C2503A2237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B271B16FFE956C465C7A2187 /* Pods_Walk.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D80CB322800C0A5005E7750 /* Walk */ = {
+		8D80CB322800C0A5005E7750 /* NotLost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D80CB472800C0A6005E7750 /* Build configuration list for PBXNativeTarget "Walk" */;
+			buildConfigurationList = 8D80CB472800C0A6005E7750 /* Build configuration list for PBXNativeTarget "NotLost" */;
 			buildPhases = (
+				984174092A58C847E50883D9 /* [CP] Check Pods Manifest.lock */,
 				8D80CB2F2800C0A5005E7750 /* Sources */,
 				8D80CB302800C0A5005E7750 /* Frameworks */,
 				8D80CB312800C0A5005E7750 /* Resources */,
+				28E4F7BF891FEB63ADE3CC01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Walk;
+			name = NotLost;
 			productName = Walk;
-			productReference = 8D80CB332800C0A5005E7750 /* Walk.app */;
+			productReference = 8D80CB332800C0A5005E7750 /* NotLost.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8D80CB2E2800C0A4005E7750 /* Build configuration list for PBXProject "Walk" */;
+			buildConfigurationList = 8D80CB2E2800C0A4005E7750 /* Build configuration list for PBXProject "NotLost" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D80CB322800C0A5005E7750 /* Walk */,
+				8D80CB322800C0A5005E7750 /* NotLost */,
 			);
 		};
 /* End PBXProject section */
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28E4F7BF891FEB63ADE3CC01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walk/Pods-Walk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Walk/Pods-Walk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Walk/Pods-Walk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		984174092A58C847E50883D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Walk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D80CB2F2800C0A5005E7750 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DAA239C2800D972008520FE /* TrailTableViewController.swift in Sources */,
 				8D80CB3B2800C0A5005E7750 /* ViewController.swift in Sources */,
 				8D80CB372800C0A5005E7750 /* AppDelegate.swift in Sources */,
 				8D80CB392800C0A5005E7750 /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		8D80CB482800C0A6005E7750 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C492955D0B540E28FA8B8F /* Pods-Walk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +363,15 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Walk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always Location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Location;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +387,7 @@
 		};
 		8D80CB492800C0A6005E7750 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED54C72831A055952B405F18 /* Pods-Walk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +396,15 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Walk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always Location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Location;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D80CB2E2800C0A4005E7750 /* Build configuration list for PBXProject "Walk" */ = {
+		8D80CB2E2800C0A4005E7750 /* Build configuration list for PBXProject "NotLost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D80CB452800C0A6005E7750 /* Debug */,
@@ -348,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D80CB472800C0A6005E7750 /* Build configuration list for PBXNativeTarget "Walk" */ = {
+		8D80CB472800C0A6005E7750 /* Build configuration list for PBXNativeTarget "NotLost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D80CB482800C0A6005E7750 /* Debug */,
