@@ -1,9 +1,6 @@
-//
 //  ViewController.swift
 //  Walk
-//
 //  Created by Mohammad Azam on 4/8/22.
-//
 
 import UIKit
 import ARCL
@@ -18,24 +15,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     var altitude: CLLocationDistance = 30
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
         self.locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
         self.locationManager.delegate = self
         self.locationManager.distanceFilter = kCLDistanceFilterNone
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.startUpdatingLocation()
-       
         sceneLocationView.run()
         view.addSubview(sceneLocationView)
     }
     
     private func plot() {
         
-        for (index, coordinate) in trail!.coordinates.enumerated() {
-            
+        for (index, coordinate) in trail!.coordinates.enumerated()
+        {
             let coordinate = CLLocationCoordinate2D(latitude: coordinate.0, longitude: coordinate.1)
             let location = CLLocation(coordinate: coordinate, altitude: altitude)
             
@@ -64,7 +60,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             let annotationNode = LocationAnnotationNode(location: location, view: stackView)
             sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: annotationNode)
-            
         }
     }
     
