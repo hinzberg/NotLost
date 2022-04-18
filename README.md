@@ -1,13 +1,20 @@
 # NotLost
 
-![NotLost Image](https://github.com/azamsharp/NotLost/blob/main/image.png?raw=true)
+This repository is a fork of Mohammad Azam's repo of the same name. 
+His idea was to place some coordinates in augmented reality and use the app during hiking trips. 
+I have taken the liberty of adding some changes.
 
+## Update 2022-04-18
 
-NotLost is an app I created for personal use during hiking trips. The main idea is to hard-code some coordinates of the hike into the app so the app can read the coordinates and place them in the real world using augmented reality.
+- Replaced the coordinates with some landmarks in my hometown.
+- The distance is displayed in kilometers instead of miles.
+- The number formatting of the distance corresponds to the current culture.
+- Every location now has an additional location name.
+- The AR Location Label looks much nicer.
 
 * This app is not yet tested in real world so please don't rely on this app to give you 100% accurate directions. 
 
-Video: 
+Mohammad Azam also did a short video of his version: 
 https://youtu.be/D2_3ASzDMHU
 
 ### Frameworks Used

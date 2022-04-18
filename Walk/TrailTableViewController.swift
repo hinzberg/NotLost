@@ -1,5 +1,4 @@
 //  TrailTableViewController.swift
-//  Walk
 //  Created by Mohammad Azam on 4/8/22.
 
 import Foundation
@@ -35,7 +34,7 @@ class TrailTableViewController: UITableViewController {
         guard let vc = segue.destination as? ARCLViewController else { return }
         
         vc.trail = TrailData.getAllTrails()[indexPath.row]
-        vc.title = "\(vc.trail!.trailName)  (\(vc.trail!.coordinatesData.count) Points)"
+        vc.title = "\(vc.trail!.trailName)  (\(vc.trail!.coordinatesData.count) Locations)"
     }
     
 }

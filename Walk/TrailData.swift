@@ -24,10 +24,10 @@ extension TrailData
         var trails = [TrailData]()
         
         let coordinates1 = [
-            CoordinatesData(locationName: "Shop", coordinate: (51.49792994645357, 7.612256782547854)),
-            CoordinatesData(locationName: "Church", coordinate: (51.499052661223395, 7.61587420796521)),
-            CoordinatesData(locationName: "Pond", coordinate: (51.498941755500326, 7.618324414303657)),
-            CoordinatesData(locationName: "Field", coordinate: (51.49689241181979, 7.616560986478088)),
+            CoordinatesData(locationName: "Emscherquellhof", coordinate: (51.49109637151158, 7.6146592071207335)),
+            CoordinatesData(locationName: "Church Pfarrgemeinde Liebfrauen", coordinate: (51.49910608571362, 7.6163847330770365)),
+            CoordinatesData(locationName: "Nursing Home Perthes-Haus", coordinate: (51.497530252361884, 7.612780604463348)),
+            CoordinatesData(locationName: "Platz von Louviers", coordinate: (51.49858016138032, 7.620003790141576)),
         ]
         let trail1 = TrailData(trailName: "Hometown", coordinatesData: coordinates1)
         

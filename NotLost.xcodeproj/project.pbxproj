@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07460A4E22CB90D13DC1D1AF /* Pods_NotLost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D633F8112E0D25B57910ABE /* Pods_NotLost.framework */; };
+		3F3239F8280D60A600C99B10 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F3239F7280D60A600C99B10 /* README.md */; };
 		3F40856F280D515B00A26F22 /* TrailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40856E280D515B00A26F22 /* TrailData.swift */; };
+		3FB27FD9280D97690032B5A7 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB27FD8280D97690032B5A7 /* LocationView.swift */; };
 		8D80CB372800C0A5005E7750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80CB362800C0A5005E7750 /* AppDelegate.swift */; };
 		8D80CB392800C0A5005E7750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80CB382800C0A5005E7750 /* SceneDelegate.swift */; };
 		8D80CB3B2800C0A5005E7750 /* ARCLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80CB3A2800C0A5005E7750 /* ARCLViewController.swift */; };
@@ -20,7 +22,9 @@
 
 /* Begin PBXFileReference section */
 		1D633F8112E0D25B57910ABE /* Pods_NotLost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotLost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3239F7280D60A600C99B10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3F40856E280D515B00A26F22 /* TrailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailData.swift; sourceTree = "<group>"; };
+		3FB27FD8280D97690032B5A7 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		67F431666CCD7AE5ECFD899B /* Pods-NotLost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotLost.release.xcconfig"; path = "Target Support Files/Pods-NotLost/Pods-NotLost.release.xcconfig"; sourceTree = "<group>"; };
 		8D80CB332800C0A5005E7750 /* NotLost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotLost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D80CB362800C0A5005E7750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		8D80CB352800C0A5005E7750 /* Walk */ = {
 			isa = PBXGroup;
 			children = (
+				3F3239F7280D60A600C99B10 /* README.md */,
 				8D80CB362800C0A5005E7750 /* AppDelegate.swift */,
 				8D80CB382800C0A5005E7750 /* SceneDelegate.swift */,
 				8D80CB3A2800C0A5005E7750 /* ARCLViewController.swift */,
@@ -85,6 +90,7 @@
 				8D80CB3F2800C0A6005E7750 /* Assets.xcassets */,
 				8D80CB412800C0A6005E7750 /* LaunchScreen.storyboard */,
 				8D80CB442800C0A6005E7750 /* Info.plist */,
+				3FB27FD8280D97690032B5A7 /* LocationView.swift */,
 			);
 			path = Walk;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				8D80CB432800C0A6005E7750 /* LaunchScreen.storyboard in Resources */,
 				8D80CB402800C0A6005E7750 /* Assets.xcassets in Resources */,
+				3F3239F8280D60A600C99B10 /* README.md in Resources */,
 				8D80CB3E2800C0A5005E7750 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DAA239C2800D972008520FE /* TrailTableViewController.swift in Sources */,
+				3FB27FD9280D97690032B5A7 /* LocationView.swift in Sources */,
 				3F40856F280D515B00A26F22 /* TrailData.swift in Sources */,
 				8D80CB3B2800C0A5005E7750 /* ARCLViewController.swift in Sources */,
 				8D80CB372800C0A5005E7750 /* AppDelegate.swift in Sources */,
